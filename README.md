@@ -20,7 +20,7 @@ make any terminal behave like quake/guake/yakuake (i.e. have a drop down feature
 [Note : should work in ubuntu as well]
 
 ## Procedure
-1. Install dependencies [dependencies](#dependencies) .
+1. Install the 3 dependencies [from above](#dependencies) .
 2. git clone this repository 
 ```git clone https://github.com/binge-coder/dropdown_functionality.git ~/dropdown_files```
 3. Copy sxhkd folder from cloned repo to ~/.config/   or use this in terminal  :
