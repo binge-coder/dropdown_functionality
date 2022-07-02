@@ -23,11 +23,12 @@ make any terminal behave like quake/guake/yakuake using this
 1. Install dependencies [dependencies](#dependencies) .
 2. git clone this repository 
 ```git clone https://github.com/binge-coder/dropdown_functionality.git ~/dropdown_files```
-3. Copy sxhkd folder from cloned repo to ~/.config/ 
+3. Copy sxhkd folder from cloned repo to ~/.config/   or use this in terminal  :
 ```cp -r ~/dropdown_files/sxhkd ~/.config/ ```
-4. make changes to sxhkdrc as per your use case see. open the sxhkdrc file and read the instructions .
-5. see for valid keybindings and format of skhkdrc: https://github.com/baskerville/sxhkd/blob/master/doc/sxhkd.1.asciidoc#configuration
-6. **Last very important step - have sxhkd run on startup. see below **
+4. go to the file or use this in terminal : ```xdg-open ~/.config/sxhkd``` 
+5. make changes to sxhkdrc as per your use case see. open the sxhkdrc file and read the instructions. 
+6. see for valid keybindings and format of skhkdrc: https://github.com/baskerville/sxhkd/blob/master/doc/sxhkd.1.asciidoc#configuration
+7. **Last very important step - have sxhkd run on startup. see below **
 
 ### start automatically on startup
 1. search for keywords like "startup" or "auto" in your system settings.
