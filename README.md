@@ -5,7 +5,7 @@ make any terminal behave like quake/guake/yakuake through using this
 ### <a name="dependencies"> You need the following programs to make it work (dependencies) </a>
 1. sxhkd ( https://github.com/baskerville/sxhkd )
 2. tdrop ( https://github.com/noctuid/tdrop )
-3. wmctrl (install from apt ```sudo apt install wmctrl```)
+3. wmctrl (install from apt ```sudo apt install wmctrl``` or see this https://archlinux.org/packages/community/x86_64/wmctrl/ or this http://tripie.sweb.cz/utils/wmctrl/ )
 
 [Note : make sure to have the dependencies of the above programs as well... i.e. dependencies of dependencies, can be found on their github pages]
 
