@@ -1,5 +1,5 @@
 # README.md
-make any terminal behave like quake/guake/yakuake using this
+make any terminal behave like quake/guake/yakuake (i.e. have a drop down feature) using this
 
 
 ### <a name="dependencies"> You need the following programs to make it work (dependencies) </a>
@@ -28,10 +28,12 @@ make any terminal behave like quake/guake/yakuake using this
 4. go to the file or use this in terminal : ```xdg-open ~/.config/sxhkd``` 
 5. make changes to sxhkdrc as per your use case see. open the sxhkdrc file and read the instructions. 
 6. see for valid keybindings and format of skhkdrc: https://github.com/baskerville/sxhkd/blob/master/doc/sxhkd.1.asciidoc#configuration
-7. **Last very important step - have sxhkd run on startup. see below **
+7. **Last very important step - have sxhkd run on startup. see below**
 
 ### start automatically on startup
 1. search for keywords like "startup" or "auto" in your system settings.
 2. A relevant setting will open where you need to add a custom command to the list of startup applications and commands.
 3. Give the command a relevant title and put sxhkd as the command.
 4. Done. Make sure to use "pkill -USR1 -x sxhkd" in terminal to refresh sxhkd. you may need to log out and log in perhaps   
+
+* you can remove the cloned folder now or use this in terminal : ```rm -r -f ~/dropdown_files```
