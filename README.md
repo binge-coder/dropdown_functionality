@@ -42,7 +42,7 @@ xdg-open ~/.config/sxhkd
 ### start automatically on startup
 1. search for keywords like "startup" or "auto" in your system settings.
 2. A relevant setting will open where you need to add a custom command to the list of startup applications and commands.
-3. Give the command a relevant title and put sxhkd as the command.
+3. Give the command a recognisable title and put sxhkd as the command.
 4. Done. Make sure to use "pkill -USR1 -x sxhkd" in terminal to refresh sxhkd. you may need to log out and log in perhaps   
 
 * you can remove the cloned folder now or use this in terminal : 
