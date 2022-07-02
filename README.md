@@ -1,11 +1,11 @@
 # README.md
-make any terminal behave like quake/guake/yakuake through using this
+make any terminal behave like quake/guake/yakuake using this
 
 
 ### <a name="dependencies"> You need the following programs to make it work (dependencies) </a>
 1. sxhkd ( https://github.com/baskerville/sxhkd )
 2. tdrop ( https://github.com/noctuid/tdrop )
-3. wmctrl (install from apt ```sudo apt install wmctrl``` or see this https://archlinux.org/packages/community/x86_64/wmctrl/ or this http://tripie.sweb.cz/utils/wmctrl/ )
+3. wmctrl ( install from apt ```sudo apt install wmctrl``` or see this https://archlinux.org/packages/community/x86_64/wmctrl/ or see this http://tripie.sweb.cz/utils/wmctrl/ )
 
 [Note : make sure to have the dependencies of the above programs as well... i.e. dependencies of dependencies, can be found on their github pages]
 
@@ -16,9 +16,8 @@ make any terminal behave like quake/guake/yakuake through using this
 
 ### tested on:
 1. linux mint 20.3 (DE:Cinnamon) (WM:Mutter)
-{i.e. the default cinnamon desktop in linux mint}		
-**WORKING**
-[Note : should work in all desktop env in linux mint and ubuntu]
+{i.e. the default cinnamon desktop in linux mint}  ->**WORKING**
+[Note : should work in ubuntu as well]
 
 ## Procedure
 1. Install dependencies [dependencies](#dependencies) .
@@ -28,7 +27,7 @@ make any terminal behave like quake/guake/yakuake through using this
 `cp -r ~/dropdown_files/sxhkd ~/.config/ `
 4. make changes to sxhkdrc as per your use case see. open the sxhkdrc file and read the instructions .
 5. see for valid keybindings and format of skhkdrc: https://github.com/baskerville/sxhkd/blob/master/doc/sxhkd.1.asciidoc#configuration
-6. Last very important step - have sxhkd run on startup. see below
+6. **Last very important step - have sxhkd run on startup. see below **
 
 ### start automatically on startup
 1. search for keywords like "startup" or "auto" in your system settings.
