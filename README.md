@@ -22,6 +22,12 @@ make any terminal behave like quake/guake/yakuake through using this
 
 ## Procedure
 1. Install dependencies [dependencies](#dependencies) .
-2. git clone this repository ( `git clone https://github.com/binge-coder/dropdown_functionality.git`)
-3. Copy sxhkd folder from cloned repo to this path
-` ~/.config/ `
+2. git clone this repository 
+`git clone https://github.com/binge-coder/dropdown_functionality.git ~/dropdown_files`
+3. Copy sxhkd folder from cloned repo to ~/.config/ 
+`cp -r ~/dropdown_files/sxhkd ~/.config/ `
+4. make changes to sxhkdrc as per your use case
+### changes
+
+
+	

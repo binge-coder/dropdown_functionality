@@ -1,22 +1,45 @@
 
+
+#####################################################################################################
+#Examples:
+
+#sample for kitty, this is tested and should work
 ctrl + space
- tdrop -r -h 100% kitty && wmctrl -i -r "$(xdotool search --class "kitty" | tail -n1)" -b toggle,above
+ tdrop -r kitty -h 100% && wmctrl -i -r "$(xdotool search --class "kitty" | tail -n1)" -b toggle,above
 
+#sample for gnome-terminal, this is tested and should work
+ctrl + 1
+ tdrop -r gnome-terminal && wmctrl -i -r "$(comm -12 <(xdotool search --name "gnome-terminal" | sort) <(xdotool search --class "gnome-terminal" | sort))" -b toggle,above  
 
-#refresh sxhkd for new configuration to take effect
+#refresh sxhkd for new configuration to take effect or type the command in any terminal
 super + shift + equal
     pkill -USR1 -x sxhkd
 
-# negative -w arg to account for a border width (default: 100%)
-#ctrl + space
-# tdrop -ma -r -w 800 -h 500 -x 283 -y 128 kitty            <----- very slow
-# tdrop -r -h 100% kitty && wmctrl -r :ACTIVE: -b toggle,above
-# bug the remember option is remembering the current focused window instead of kitty ---- wait it's fixed automatically?
 
-# my_term=urxvt
-# my_term=sakura
-# my_term=xterm
-# my_term=alacritty
-# my_term=terminator
-# my_term=gnome-terminal
-# my_term=kitty  <----- this is done for now but you can use something else in place of kitty for another program even those not mentioned above 
+#####################################################################################################
+
+# -h 100% means full screen, it is optional
+# use command " man tdrop " in terminal for more options 
+
+#########################################################
+#(templates below -)
+
+#(If using kitty )
+#(then)
+
+#{preferred key binding}
+# tdrop -r kitty {-h (in percent or pixels, default is 45%)} {-w (default is 100%)} && wmctrl -i -r "$(xdotool search --class "kitty" | tail -n1)" -b toggle,above
+
+#(If using the following -)
+# (my_term=urxvt)
+# (my_term=sakura)
+# (my_term=xterm)
+# (my_term=alacritty)
+# (my_term=terminator)
+# (my_term=gnome-terminal)
+# (or any other not listed above)
+# (then)
+
+#{preferred key binding}
+# tdrop -r {my_term(you need replace my_term with your terminal)} {-h (in percent or pixels, default is 45%)} {-w (default is 100%)} && wmctrl -i -r "comm -12 <(xdotool search --name "{my_term}(replace my_term here as well)" | sort) <(xdotool search --class "{my_term}(replace here as well)" | sort)" -b toggle,above 
+###########################################################
