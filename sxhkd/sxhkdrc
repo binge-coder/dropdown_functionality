@@ -1,0 +1,22 @@
+
+ctrl + space
+ tdrop -r -h 100% kitty && wmctrl -i -r "$(xdotool search --class "kitty" | tail -n1)" -b toggle,above
+
+
+#refresh sxhkd for new configuration to take effect
+super + shift + equal
+    pkill -USR1 -x sxhkd
+
+# negative -w arg to account for a border width (default: 100%)
+#ctrl + space
+# tdrop -ma -r -w 800 -h 500 -x 283 -y 128 kitty            <----- very slow
+# tdrop -r -h 100% kitty && wmctrl -r :ACTIVE: -b toggle,above
+# bug the remember option is remembering the current focused window instead of kitty ---- wait it's fixed automatically?
+
+# my_term=urxvt
+# my_term=sakura
+# my_term=xterm
+# my_term=alacritty
+# my_term=terminator
+# my_term=gnome-terminal
+# my_term=kitty  <----- this is done for now but you can use something else in place of kitty for another program even those not mentioned above 
