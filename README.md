@@ -8,7 +8,8 @@
 2. tdrop ( https://github.com/noctuid/tdrop )
 3. wmctrl ( install from apt ```sudo apt install wmctrl``` or see this https://archlinux.org/packages/community/x86_64/wmctrl/ or see this http://tripie.sweb.cz/utils/wmctrl/ )
 [Note : You can either build these 3 from source OR you can just install them from your distro's package manager if you can find it. If you can't find it in your package manager, you may have to build from source like a true linux hackerman]
-![hackermanimg](https://github.com/binge-coder/dropdown_functionality/assets/98118264/c9bc7b6b-b192-4db4-985d-17769c9820a1)
+
+<img src="https://github.com/binge-coder/dropdown_functionality/assets/98118264/c9bc7b6b-b192-4db4-985d-17769c9820a1" alt="hackerman image" width="500"/>
 
 ## Operating systems:
 1. Linux -> should work
